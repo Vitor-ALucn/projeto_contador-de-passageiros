@@ -13,7 +13,7 @@ def analisar_dados_onibus():
     capacidade_maxima = 50
     dados_onibus = defaultdict(list) #Cria um dicionário que mapeia cada número de linha de ônibus a uma lista de tuplas 
                                      #(entrada, saída) por parada. Como é defaultdict(list), se você acessar uma chave 
-                                     #que não existe (ex: dados_onibus["101"]), ele automaticamente cria uma lista vazia. 
+                                     #que não existe, ele automaticamente cria uma lista vazia. 
     for linha in linhas:
         linha = linha.strip()        #Remove espaços, quebras de linha e tabulações no início e fim da linha.
         if not linha:                #Se a linha estiver vazia (após o strip()), pula para a próxima linha.
