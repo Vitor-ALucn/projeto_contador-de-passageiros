@@ -1,3 +1,4 @@
+import csv
 from collections import defaultdict
 
 def analisar_dados_onibus():
